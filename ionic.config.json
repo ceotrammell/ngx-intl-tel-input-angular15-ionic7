@@ -1,0 +1,7 @@
+{
+  "name": "ngx-intl-tel-input-angular15-ionic7",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

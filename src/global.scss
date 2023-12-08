@@ -1,0 +1,128 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+@import './app/ngx/ngx-intl-tel-input/src/lib/ngx-intl-tel-input.component.css';
+@import './app/ngx/ngx-intl-tel-input/src/lib/bootstrap-dropdown.css';
+
+.iti {
+	display: block !important;
+    margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.iti .dropdown-menu.country-dropdown {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-color: grey;
+	margin-top: -1px;
+    background-color: #000000;
+    z-index: 9999;
+}
+
+.iti .iti__country-list {
+	box-shadow: none;
+	font-size: 14px;
+	margin-left: 0;
+	max-height: 170px;
+    width: 263px;
+}
+
+.iti__flag-container.open + input {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.iti .search-container input {
+	font-size: 14px;
+	border-color: grey;
+	border-radius: 0;
+	padding: 5px 10px;
+    background-color: #000000;
+}
+
+.iti .search-container input:focus {
+	outline: none;
+}
+
+.iti__divider {
+    all: unset;
+ }
+
+.iti__arrow {
+    margin-left: 6px !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-left: 3px solid transparent !important;
+    border-right: 3px solid transparent !important;
+    border-top: 4px solid #555 !important;
+}
+
+ngx-intl-tel-input input {
+	height: 44px;
+	margin-bottom: 20px;
+	padding: 10px;
+	font-size: 18px;
+    border: 1px solid grey !important;
+    border-radius: 5px; 
+    margin-top: 10px !important;
+    --padding-start: 10px !important;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+ngx-intl-tel-input.ng-invalid.ng-touched input {
+	border: 1px solid #c0392b;
+}
+
+ngx-intl-tel-input input:hover {
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+ngx-intl-tel-input input:focus {
+	outline: none !important;
+	border-color: grey;
+	box-shadow: 0 0 0 0 #000;
+}
+
+ngx-intl-tel-input input::-webkit-input-placeholder {
+	color: #bac2c7;
+}
+
+ngx-intl-tel-input input:-ms-input-placeholder {
+	color: #bac2c7;
+}
+
+ngx-intl-tel-input input::-ms-input-placeholder {
+	color: #bac2c7;
+}
+
+ngx-intl-tel-input input::placeholder {
+	color: #bac2c7;
+}
+
+ngx-intl-tel-input input[disabled] {
+	background-color: #e5eaf1;
+}
